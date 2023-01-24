@@ -1,11 +1,17 @@
-import { Box } from '@chakra-ui/react'
-import { useState } from 'react'
+import { Button, Flex, HStack, useColorMode } from '@chakra-ui/react'
+import { Home } from './pages/home'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Box>oi</Box>
+    <Flex height={'100vh'} justify='center' align='center' >
+      <HStack gap={'5'}>
+        <Button onClick={toggleColorMode}>Current theme: {colorMode}</Button>
+        <Home></Home>
+      </HStack>
+    </Flex >
   )
 }
 

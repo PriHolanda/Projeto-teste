@@ -7,7 +7,7 @@ import { styles } from './styles'
 export const Home: React.FC = () => {
   return (
     <Layout>
-      <Box {...styles.container()}>Home</Box>
+  <Box {...styles.container()}></Box>
     </Layout>
 
   )
